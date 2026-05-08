@@ -1,0 +1,49 @@
+## Items for NLP CA2 assignment
+
+1. Identify documents to use:
+	- Should be able to take pictures and scan them as well.
+	- Need content like tables, diagrams, large enough pieces of text so that I can show how the image processing finds it and associates it and then to perform text processing too.
+	- Potential options:
+		- Shopping bills from tescos etc.
+		- Gas/Electric bills
+		- Maybe some snippets of academic papers as would have some with diagrams and tables and good amount of text.
+			- Maybe that eye reflection one she talked about in the class??
+		- Newspaper or articles in like Financial times or a Science magazine?
+	- For printed items, try scrunching it up into a ball and then scanning/photographing to see if possible to read/analyse it
+	- For one of the pictures, take it at an angle and the can resize and change its angle.
+	- Email and text exchanges from one of the Elon Musk or Mark Zukerberg trials and if there was any attachements??
+		- Maybe even list of tweets??
+	- Andrej Karpathy blog?
+
+2. Setup and use the template that was provided, submit it initially to github to start.
+3. Start small and pick one document and go through the full list of steps to figure it all out roughly.
+
+	i) Create initial psuedo code outline of the tasks before writing the code to undertand/outline the flow
+
+	a) Extract text from images (using OCR).
+	b) Process and analyse the extracted text (tokenisation, stemming, lemmatisation, stopword removal).
+	c) Detect and recognise key features in both the text and images (e.g., tables, signatures, diagrams, figures).
+	d) Provide a structured output with textual and visual insights, such as categorising sections, extracting tabular data, recognising diagrams, and detecting important patterns or key phrases. 
+4. Iterate over the flow for improvement.
+5. Figure out how to repeat it nicely/neatly for the variety of the documents.
+6. Layout the final result that the assignment asks for liek the images for before and after etc, text details and understanding.
+7. Prepare run through for presentation.
+8. Record presentation
+		
+
+** Track all pain points or issues as going through. This is what lecturer wants to hear about during the presentation to show you did the work and worked through difficult steps.
+	- For the utility bill photograph, it was taken horizontally. So with text detection it did not work, required to be vertical for the text detection to work properly and have the boxes appear around the found letters. Funny thing was that it would work upside down fine but i guess its still recognising characters this way somehow??
+	- For the utility bill photograph, the text extraction could not find much on original import. Had to convert to gray scale and to then use thresholding to try to highlight the text values more so that they could be picked up better. This did improve the output but again it was still missing things like the big cost figures on the right.
+	- For the utility bill photograph, when i tried out adding in denoising, that allowed for the bill amount to be found! which is great, so keeping that in now.
+	- With the text processing hit issues around it ignoring not including the "-" sign for some numbers, so the "-30%" discount was being seen as just "30%" which in terms of a bill understanding of final figures would have a big impact. Not sure exactly how to resolve yet.
+	- When doing the edges it was catchign a lot of edges from outside the document, this is because I had the document on a wooden floor when I took the photograph. So will look into Region of Interest for isolating just the document in the image and that should reduce the outside document noise.
+	- Confused about what OCR text to use for NLP, becauces the computer vision one seemed to produce better results so not sure if i should move that to earlier in the flow or keep where it is and stick to the NLP on the original selection of the denoised image and subsequent text.
+** Track all references of websites and queries used throughout, any time used AI with what prompt was asked.
+	- Tutorials/Labs from course
+	- ChatGPT
+		- General issues with Python code not working and espeically cv2 errors. Used it to explain in simple basic terms the params for each of the functions so could grasp better what to tweak to improve what I was looking for e.g. with cv2.Laplacian() increasing the kernal size brought in more pixels which ended up giving me more detailed lines vs the default of 1.
+		- Formatting and review of structure of notebook sections
+		- 
+	- Google searches for Python code
+	- GeeksforGeeks.com for example of use of cv2 library
+	- 
