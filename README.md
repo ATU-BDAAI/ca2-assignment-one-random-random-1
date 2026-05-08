@@ -4,4 +4,4 @@
 
 ## Folder overview
 - /data folder contains all image resources used
-- /notebook folder contains the jupyter notebook code
+- CA2_Template.ipynb contains assignment code as per exact assignment instructions to use this file
