@@ -1,0 +1,82 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="1bi819r6kMqF0AsHSmau">
+    <mxGraphModel dx="1406" dy="746" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="nonnz-1ftXdkM-AE4cc9-5" edge="1" parent="1" source="nonnz-1ftXdkM-AE4cc9-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="nonnz-1ftXdkM-AE4cc9-2" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nonnz-1ftXdkM-AE4cc9-1" parent="1" style="shape=ext;double=1;rounded=0;whiteSpace=wrap;html=1;" value="Input documents" vertex="1">
+          <mxGeometry height="80" width="120" x="260" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="nonnz-1ftXdkM-AE4cc9-6" edge="1" parent="1" source="nonnz-1ftXdkM-AE4cc9-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="nonnz-1ftXdkM-AE4cc9-3" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nonnz-1ftXdkM-AE4cc9-10" edge="1" parent="1" source="nonnz-1ftXdkM-AE4cc9-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="nonnz-1ftXdkM-AE4cc9-8" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nonnz-1ftXdkM-AE4cc9-2" parent="1" style="shape=ext;double=1;rounded=0;whiteSpace=wrap;html=1;" value="Document setup" vertex="1">
+          <mxGeometry height="80" width="120" x="260" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="nonnz-1ftXdkM-AE4cc9-7" edge="1" parent="1" source="nonnz-1ftXdkM-AE4cc9-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="nonnz-1ftXdkM-AE4cc9-4" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nonnz-1ftXdkM-AE4cc9-3" parent="1" style="shape=ext;double=1;rounded=0;whiteSpace=wrap;html=1;" value="Load/Convert PDFs" vertex="1">
+          <mxGeometry height="80" width="120" x="490" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="nonnz-1ftXdkM-AE4cc9-4" parent="1" style="shape=ext;double=1;rounded=0;whiteSpace=wrap;html=1;" value="Create Image Version" vertex="1">
+          <mxGeometry height="80" width="120" x="680" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="nonnz-1ftXdkM-AE4cc9-11" edge="1" parent="1" source="nonnz-1ftXdkM-AE4cc9-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="nonnz-1ftXdkM-AE4cc9-9" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nonnz-1ftXdkM-AE4cc9-8" parent="1" style="shape=ext;double=1;rounded=0;whiteSpace=wrap;html=1;" value="NLP Processing&lt;div&gt;&lt;br&gt;&lt;div&gt;[ Clean text, tokenise, NER, Regex ]&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="100" width="150" x="245" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="nonnz-1ftXdkM-AE4cc9-13" edge="1" parent="1" source="nonnz-1ftXdkM-AE4cc9-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="nonnz-1ftXdkM-AE4cc9-12" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nonnz-1ftXdkM-AE4cc9-9" parent="1" style="shape=ext;double=1;rounded=0;whiteSpace=wrap;html=1;" value="Computer Vision Processing&lt;div&gt;&lt;br&gt;&lt;div&gt;[ Thresholding, edges, morphology, rection detection and labeling ]&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="100" width="150" x="245" y="460" as="geometry" />
+        </mxCell>
+        <mxCell id="nonnz-1ftXdkM-AE4cc9-16" edge="1" parent="1" source="nonnz-1ftXdkM-AE4cc9-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="nonnz-1ftXdkM-AE4cc9-14" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nonnz-1ftXdkM-AE4cc9-12" parent="1" style="shape=ext;double=1;rounded=0;whiteSpace=wrap;html=1;" value="Multi modal Integration&lt;div&gt;&lt;br&gt;&lt;div&gt;[ Link OCR lines to regions ]&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="100" width="160" x="240" y="590" as="geometry" />
+        </mxCell>
+        <mxCell id="nonnz-1ftXdkM-AE4cc9-14" parent="1" style="shape=ext;double=1;rounded=0;whiteSpace=wrap;html=1;" value="Final Report - Single Run&amp;nbsp;" vertex="1">
+          <mxGeometry height="80" width="150" x="395" y="730" as="geometry" />
+        </mxCell>
+        <mxCell id="nonnz-1ftXdkM-AE4cc9-15" parent="1" style="shape=ext;double=1;rounded=0;whiteSpace=wrap;html=1;" value="Run All Documents&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;[ Display results and comparison for all documents ]&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="150" x="90" y="830" as="geometry" />
+        </mxCell>
+        <mxCell id="nonnz-1ftXdkM-AE4cc9-17" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="nonnz-1ftXdkM-AE4cc9-15" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="320" y="760" />
+              <mxPoint x="165" y="760" />
+            </Array>
+            <mxPoint x="320" y="690" as="sourcePoint" />
+            <mxPoint x="480" y="780" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nonnz-1ftXdkM-AE4cc9-20" parent="1" style="swimlane;startSize=0;" value="" vertex="1">
+          <mxGeometry height="400" width="500" x="90" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="nonnz-1ftXdkM-AE4cc9-21" edge="1" parent="1" source="nonnz-1ftXdkM-AE4cc9-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.588;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;" target="nonnz-1ftXdkM-AE4cc9-15" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="70" y="237" />
+              <mxPoint x="70" y="760" />
+              <mxPoint x="128" y="760" />
+            </Array>
+            <mxPoint x="240" y="260" as="sourcePoint" />
+            <mxPoint x="70" y="780" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
