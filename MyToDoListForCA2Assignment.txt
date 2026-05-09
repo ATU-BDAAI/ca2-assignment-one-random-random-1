@@ -40,6 +40,7 @@
 	- Confused about what OCR text to use for NLP, becauces the computer vision one seemed to produce better results so not sure if i should move that to earlier in the flow or keep where it is and stick to the NLP on the original selection of the denoised image and subsequent text.
 		- Refactored this by moving to top of file and performing the checks and choosing one image to be used for the both the NLP and Computer Vision
 	- Refactoring the single run to allow for multiple documents is a pain. Have been able to make most steps generic and have a single file selection at the top of the file now but this means the user has to manually rerun the entire notebook for each file. Need to figure out the best way to entire store all the outputs from each run to allow comparison or to allow for multiple runs, one for each document to take place without the user having to do anything.
+	- Trying to keep the story like flow of the notebook vs complete swap out to more abstract view that is more like a proper pipeline is difficult. Going with keeping the original flow and then an extra run all section, duplications the code but able to just reuse what I've already done instead of tyring to start it all again and potentially trip myself up.
 ** Track all references of websites and queries used throughout, any time used AI with what prompt was asked.
 	- Tutorials/Labs from course
 	- ChatGPT
