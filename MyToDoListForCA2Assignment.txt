@@ -38,12 +38,14 @@
 	- With the text processing hit issues around it ignoring not including the "-" sign for some numbers, so the "-30%" discount was being seen as just "30%" which in terms of a bill understanding of final figures would have a big impact. Not sure exactly how to resolve yet.
 	- When doing the edges it was catchign a lot of edges from outside the document, this is because I had the document on a wooden floor when I took the photograph. So will look into Region of Interest for isolating just the document in the image and that should reduce the outside document noise.
 	- Confused about what OCR text to use for NLP, becauces the computer vision one seemed to produce better results so not sure if i should move that to earlier in the flow or keep where it is and stick to the NLP on the original selection of the denoised image and subsequent text.
+		- Refactored this by moving to top of file and performing the checks and choosing one image to be used for the both the NLP and Computer Vision
+	- Refactoring the single run to allow for multiple documents is a pain. Have been able to make most steps generic and have a single file selection at the top of the file now but this means the user has to manually rerun the entire notebook for each file. Need to figure out the best way to entire store all the outputs from each run to allow comparison or to allow for multiple runs, one for each document to take place without the user having to do anything.
 ** Track all references of websites and queries used throughout, any time used AI with what prompt was asked.
 	- Tutorials/Labs from course
 	- ChatGPT
 		- General issues with Python code not working and espeically cv2 errors. Used it to explain in simple basic terms the params for each of the functions so could grasp better what to tweak to improve what I was looking for e.g. with cv2.Laplacian() increasing the kernal size brought in more pixels which ended up giving me more detailed lines vs the default of 1.
 		- Formatting and review of structure of notebook sections
-		- 
+		- Refactoring assistance
 	- Google searches for Python code
 	- GeeksforGeeks.com for example of use of cv2 library
 	- 

@@ -3,5 +3,6 @@
 
 
 ## Folder overview
-- /data folder contains all image resources used
+- /data/originals folder contains all image resources used
+- /data/output folder contains the .jpg files of .pdf files that were read in and converted to allow for scanning in the app.
 - CA2_Template.ipynb contains assignment code as per exact assignment instructions to use this file
